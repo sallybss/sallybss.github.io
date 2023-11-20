@@ -1,0 +1,288 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+}
+
+nav {
+    width: 100vw;
+    background: #ffffff6c;
+    position: fixed;
+    display: flex;
+    top: 0;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+li {
+    float: left;
+}
+
+a {
+    padding: 20px;
+    width: 100%;
+    display: block;
+    text-decoration: none;
+    color: rgb(83, 56, 30);
+    text-transform: uppercase;
+    font-weight: lighter;
+
+
+}
+
+.headline {
+    font-size: 3rem;
+    font-weight: 500;
+    margin: 10px;
+    color: rgb(170, 114, 74);
+}
+
+/*sections*/
+#section1 {
+    height: 800px;
+    background: rgba(0,0,0,0.7) url(https://img.freepik.com/free-photo/flat-lay-assortment-argan-oil-care-product_23-2148955841.jpg?w=1380&t=st=1699901440~exp=1699902040~hmac=df397ddcc386fb196a21a1d02719c463cd1a4c62ad7076ef68ddeb60e4136586);
+    display: flex;
+    background-size: cover; 
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-blend-mode: darken;
+}
+
+#section2 {
+    height: 600px;
+    background: #F5EFE5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 40px;
+    align-items: center;
+}
+
+#section3 {
+    height: 700px;
+    background-image: url(https://img.freepik.com/free-photo/front-view-argan-product-assortment_23-2148955774.jpg?w=1380&t=st=1699901741~exp=1699902341~hmac=d4eafbba12aafc19ddeef2d720ee47065a7b8cfe6d424c7cbab28ac4508a3e47);
+    display: flex;
+    background-size: cover;
+    flex-direction: column;
+    gap: 40px;
+}
+
+#section4 {
+    height: 850px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-size: cover;
+    background-color: #F5EFE5;
+}
+
+#section5 {
+    height: 700px;
+    background-image: url(https://img.freepik.com/free-photo/flat-lay-assortment-argan-oil-care-product_23-2148955839.jpg?w=1380&t=st=1699901818~exp=1699902418~hmac=e1f61e87ab556db8e93dd63b52b1ffe08694ba95b994668169c8a141553e5a23);
+    display: flex;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+.header {
+    text-align: center;
+    padding: 0;
+    color: rgb(252, 252, 252);
+}
+
+
+.hero {
+    height: 100px;
+    background-image: linear-gradient(rgba(12,3,510.3),(12,3,510.3)) ;
+    position: relative;
+    padding: 0 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section {
+ width: 100vw;
+}
+
+.section2-paragraph{
+    max-width: 80vw;
+    font-size: 1.5rem;
+    text-align: justify;
+}
+
+.section3-paragraph{
+    width: 50vw;
+    font-size: 1.5rem;
+    text-align: left;
+    margin-left: 4rem;
+}
+
+.content {
+text-align: center;
+width: 100%;
+}
+
+.content h1{
+    font-size: 10rem;
+    color: #ffff;
+    font-weight: 400;
+}
+
+#section3-headline {
+    margin: 4rem;
+}
+
+.contact-header{
+    font-size: xx-large;
+    color: #f0f0f0;
+    font-weight: lighter;
+}
+
+
+/*form*/
+.container {
+    width: 670px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center; 
+    box-shadow: 20px 20px 50px #232222;
+    border-radius: 15px;
+    background: rgba(60, 56, 56, 0.159);
+    backdrop-filter: blur(10px);
+    margin: auto;
+    margin-top: 50px; 
+}
+
+.container form {
+    width: 100%; 
+    max-width: 670px;
+    
+}
+
+.container form h6 {
+    color: rgb(58, 51, 51);
+    font-weight: 500;
+    margin-top: 20px;
+    width: 100%;
+    text-align: center;
+}
+
+.container form input {
+width: 290px;
+height: 40px;
+padding-left: 10px;
+outline: none;
+border: none;
+font-size: 15px;
+margin-bottom: 10px;
+background: none;
+border-bottom: 2px solid #fff;
+}
+
+.container form input::placeholder{
+    color: #fff;
+}
+
+.container form #lastName,
+.container form #mobile {
+    margin-left: 20px;
+}
+
+
+.container form textarea {
+    background: none;
+    border: none;
+    border-bottom: 2px solid #fff;
+    color: #fff;
+    font-weight: 200;
+    font-size: 15px;
+    padding: 10px;
+    outline: none;
+    min-width: 600px;
+    max-width: 600px;
+    min-height: 80px;
+    max-height: 80px;
+}
+
+textarea::-webkit-scrollbar-thumb{
+    background-color: #fff;
+}
+
+.container form #button{
+    border: none;
+    background: rgb(105, 98, 76);
+    border-radius: 5px;
+    margin-top: 20px;
+    font-weight: 600px;
+    font-size: 20px;
+    color: #f3f3f3;
+    width: 100px;
+    padding: 0;
+    margin-right: 500px;
+    margin-bottom: 30px;
+    transition: 0.3s;
+
+}
+
+.container form #button:hover {
+    opacity: 0.7;
+}
+
+/*cards*/
+.card-container {
+    display:flex;
+    justify-content: center;
+    width: 20vw;
+    height: 100%;
+    align-items: center;
+}
+
+.card{
+    width: 100%;
+    height: 80%;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 2px 4px #0002;
+}
+
+.card img{
+    width: 100%;
+    height: 70%;
+    object-fit: fill;
+}
+
+.card-content{
+    padding: 16px;
+}
+
+
+.card-content .btn{
+
+    padding: 8px 16px;
+    background-color: #ca8a4eb5;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+
